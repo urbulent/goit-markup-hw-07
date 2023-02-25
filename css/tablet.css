@@ -1,0 +1,232 @@
+@media screen and (min-width: 768px) {
+  .container,
+  .header-container {
+    max-width: 768px;
+  }
+
+  .container-mini,
+  .customers-container,
+  .footer-container {
+    max-width: 552px;
+  }
+
+.customers-container,
+.footer-container {
+  padding: 0;
+  }
+
+  .filter-container {
+    max-width: none;
+  }
+
+  .footer-container {
+    column-gap: 16px;
+    row-gap: 72px;
+    align-items: start;
+    justify-content: left;
+    flex-direction: row;
+  }
+  /* ================================================================== MODAL WINDOW =================================================================== */
+
+  .modal-window {
+    max-height: 586px;
+    width: 408px;
+  }
+
+  /* ----------------------------------------------------------------- HEADER MOBILE MENU ------------------------------------------------------------ */
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu-open-btn {
+    display: none;
+  }
+
+  /* --------------------------------------------------------------- HEADER WIDE SCREEN MENU ---------------------------------------------------------- */
+
+  .header-menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-menu-link {
+    color: var(--main-titles-color);
+    font-weight: 500;
+    /* Розширення зони кліку */
+    padding-top: 24px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-menu-link :active {
+    color: var(--active-links-color);
+  }
+
+  .header-menu-link:hover,
+  .header-menu-link:focus {
+    color: var(--accent-color);
+  }
+
+  .header-menu-current-page {
+    color: var(--accent-color);
+    position: relative;
+  }
+
+  .header-menu-current-page::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+
+  .header-address {
+    font-style: normal;
+    display: block;
+    padding-right: 16px;
+    /* padding-bottom: 12px;
+    margin-top: auto;
+    margin-bottom: 16px; */
+  }
+
+  .header-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+  }
+
+  .header-contact-link {
+    color: var(--main-text-color);
+    letter-spacing: 0.04em;
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--main-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-contact-link:active {
+    color: var(--active-links-color);
+  }
+
+  .header-contact-link:hover,
+  .header-contact-link:focus {
+    color: var(--accent-color);
+  }
+
+  .tel {
+    position: absolute;
+    height: auto;
+    width: auto;
+  }
+
+  /* =================================================================== MAIN PAGE / HERO SECTION ==================================================================== */
+
+  .hero-section {
+    background-image: var(--main-overlay-color), url(../images/hero-desktop-bg-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: var(--main-overlay-color), url(../images/hero-desktop-bg-2x.jpg);
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 40px;
+  }
+
+  /* ================================================================= MAIN PAGE / ADVANTAGES SECTION ================================================================== */
+
+  .advantage-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .advantage-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .advantage-title {
+    text-align: left;
+  }
+
+  /* ================================================================== MAIN PAGE / SERVICES SECTION =================================================================== */
+
+  .services-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  /* ==================================================================== MAIN PAGE / TEAM SECTION ===================================================================== */
+
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  .team-member-card {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* ================================================================= MAIN PAGE / CUSTOMERS SECTION ================================================================== */
+
+  .customer-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .customer-item {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+
+  .customer-company-link {
+    padding: 16px 32px;
+  }
+
+  /* ====================================================================== PORTFOLIO PAGE / PORTFOLIO SECTION ======================================================================= */
+
+  .project-category-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .portfolio-button {
+    padding: 12px 24px;
+  }
+
+  .project-card {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* ============================================================================ FOOTER ============================================================================= */
+
+  /*  ------------------- [FOOTER LEFT PART] ------------------ */
+
+  .left-footer-part-container {
+    align-items: start;
+  }
+
+  /*  ------------------ [FOOTER MEDIA SET] ------------------ */
+
+  .footer-media-block {
+    align-items: start;
+  }
+
+  /*  ------------------ [FOOTER SIGN-UP FORM] ------------------ */
+
+  .footer-subscription-field {
+    justify-content: start;
+  }
+
+  .footer-subscription-form {
+    justify-content: start;
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,68 @@
+@media screen and (min-width: 480px) {
+  /* ========================================================================= CONTAINERS =========================================================================== */
+  .container,
+  .customers-container,
+  .footer-container {
+    max-width: 428px;
+  }
+
+  /* ========================================================================= MOBILE MENU =========================================================================== */
+
+  .mobile-menu-media-set {
+    gap: 56px;
+  }
+
+  /* ======================================================================== MODAL WINDOW =========================================================================== */
+  .modal-window {
+    height: 586px;
+    max-width: 408px;
+
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+  }
+
+.backdrop.is-hidden .modal-window {
+  transform: translateX(-50%) scale(0);
+}
+  .modal-checkbox-field {
+    margin-bottom: 24px;
+  }
+
+  /* ================================================================== MAIN PAGE / [HERO SECTION] =================================================================== */
+
+  .hero-section {
+    background-image: var(--main-overlay-color), url(../images/hero-tablet-bg-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: var(--main-overlay-color), url(../images/hero-tablet-bg-2x.jpg);
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 72px;
+    max-width: 350px;
+    font-size: 36px;
+  }
+
+  /* ================================================================= MAIN PAGE / ADVANTAGES SECTION ================================================================== */
+
+  .advantage-description {
+    text-align: left;
+  }
+
+  /* ================================================================= MAIN PAGE / CUSTOMERS SECTION ================================================================== */
+  .customer-company-link {
+    padding: 16px 40px;
+  }
+
+  /* ====================================================================== PORTFOLIO PAGE / PORTFOLIO SECTION ======================================================================= */
+
+  /* ============================================================================ FOOTER ============================================================================= */
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
