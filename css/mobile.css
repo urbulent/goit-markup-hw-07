@@ -32,12 +32,12 @@
   /* ================================================================== MAIN PAGE / [HERO SECTION] =================================================================== */
 
   .hero-section {
-    background-image: var(--main-overlay-color), url(../images/hero-tablet-bg-1x.jpg);
+    background-image: var(--main-overlay-color), url(../images/hero-mobile-bg-1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-section {
-      background-image: var(--main-overlay-color), url(../images/hero-tablet-bg-2x.jpg);
+      background-image: var(--main-overlay-color), url(../images/hero-mobile-bg-2x.jpg);
     }
   }
 

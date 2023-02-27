@@ -76,7 +76,7 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 6px;
+    bottom: 0;
     display: block;
     width: 100%;
     height: 100%;
@@ -88,17 +88,12 @@
   .header-address {
     font-style: normal;
     display: block;
-    padding-right: 16px;
-    /* padding-bottom: 12px;
-    margin-top: auto;
-    margin-bottom: 16px; */
   }
 
   .header-contact-list {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    
   }
 
   .header-contact-link {
@@ -128,17 +123,19 @@
   /* =================================================================== MAIN PAGE / HERO SECTION ==================================================================== */
 
   .hero-section {
-    background-image: var(--main-overlay-color), url(../images/hero-desktop-bg-1x.jpg);
+    background-image: var(--main-overlay-color), url(../images/hero-tablet-bg-1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-section {
-      background-image: var(--main-overlay-color), url(../images/hero-desktop-bg-2x.jpg);
+      background-image: var(--main-overlay-color), url(../images/hero-tablet-bg-2x.jpg);
     }
   }
 
   .hero-title {
     margin-bottom: 40px;
+    max-width: 496px;
+      font-size: 56px;
   }
 
   /* ================================================================= MAIN PAGE / ADVANTAGES SECTION ================================================================== */

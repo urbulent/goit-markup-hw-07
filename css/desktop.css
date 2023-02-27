@@ -45,19 +45,6 @@
     padding-bottom: 28px;
   }
 
-.header-menu-current-page::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 2px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-}
-
   .header-address {
     margin-left: auto;
   }
@@ -84,17 +71,6 @@
     padding-top: 188px;
     padding-bottom: 188px;
   }
-
-/* .hero-title {
-  margin-bottom: 40px;
-  font-style: normal;
-  font-weight: 700;
-  /* font-size: 56px; */
-  /* line-height: 60px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #FFFFFF;
-} */ 
 
   /* ================================================================== MAIN PAGE / SERVICES SECTION =================================================================== */
 
